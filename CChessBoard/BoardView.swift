@@ -15,6 +15,8 @@ class BoardView: UIView {
     var originY: CGFloat = 57
     let cellSide: CGFloat = 75
     let frameMargin: CGFloat = 12
+    
+    var shadowPiecesBox: Set<CChessPiece> = []
 
     override func draw(_ rect: CGRect) {
         originX = (bounds.width - CGFloat(cols - 1) * cellSide) / 2
@@ -23,10 +25,18 @@ class BoardView: UIView {
         drawGrid()
         drawFrame()
         drawStars()
-        
-        let pieceImage = UIImage(named: "bb")
-//        pieceImage?.draw(at: CGPoint(x: 100, y: 100))
-        pieceImage?.draw(in: CGRect(x: 100, y: 100, width: 200, height: 200))
+        drawPieces()
+    }
+    
+    func drawPieces() {
+        for piece in shadowPiecesBox {
+            drawPieceAt(col: piece.col, row: piece.row, imageName: piece.imageName)
+        }
+    }
+    
+    func drawPieceAt(col: Int, row: Int, imageName: String) {
+        let pieceImage = UIImage(named: imageName)
+        pieceImage?.draw(in: CGRect(x: originX + CGFloat(col) * cellSide - cellSide/2, y: originY + CGFloat(rows - 1 - row) * cellSide - cellSide/2, width: cellSide, height: cellSide))
     }
     
     func drawStars() {

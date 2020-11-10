@@ -8,10 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var boardView: BoardView!
+    var cchessGame = CChessGame()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        cchessGame.initBoard()
+        boardView.shadowPiecesBox = cchessGame.piecesBox
     }
 
 

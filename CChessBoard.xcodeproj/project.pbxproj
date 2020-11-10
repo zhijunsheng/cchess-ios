@@ -14,6 +14,10 @@
 		07DA9B86254C578F00D51B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DA9B85254C578F00D51B66 /* Assets.xcassets */; };
 		07DA9B89254C578F00D51B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DA9B87254C578F00D51B66 /* LaunchScreen.storyboard */; };
 		07DA9B92254C57D500D51B66 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA9B91254C57D500D51B66 /* BoardView.swift */; };
+		07ED737D255B4F71007ABA53 /* CChessPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED737C255B4F71007ABA53 /* CChessPiece.swift */; };
+		07ED7381255B4F86007ABA53 /* CChessPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED7380255B4F86007ABA53 /* CChessPlayer.swift */; };
+		07ED7385255B5016007ABA53 /* CChessGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED7384255B5016007ABA53 /* CChessGame.swift */; };
+		07ED7388255B50B6007ABA53 /* CChessRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED7387255B50B6007ABA53 /* CChessRank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		07DA9B88254C578F00D51B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07DA9B8A254C578F00D51B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07DA9B91254C57D500D51B66 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		07ED737C255B4F71007ABA53 /* CChessPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CChessPiece.swift; sourceTree = "<group>"; };
+		07ED7380255B4F86007ABA53 /* CChessPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CChessPlayer.swift; sourceTree = "<group>"; };
+		07ED7384255B5016007ABA53 /* CChessGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CChessGame.swift; sourceTree = "<group>"; };
+		07ED7387255B50B6007ABA53 /* CChessRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CChessRank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 		07DA9B7B254C578A00D51B66 /* CChessBoard */ = {
 			isa = PBXGroup;
 			children = (
+				07ED7380255B4F86007ABA53 /* CChessPlayer.swift */,
+				07ED7387255B50B6007ABA53 /* CChessRank.swift */,
+				07ED737C255B4F71007ABA53 /* CChessPiece.swift */,
+				07ED7384255B5016007ABA53 /* CChessGame.swift */,
 				07DA9B7C254C578A00D51B66 /* AppDelegate.swift */,
 				07DA9B7E254C578A00D51B66 /* SceneDelegate.swift */,
 				07DA9B80254C578A00D51B66 /* ViewController.swift */,
@@ -140,10 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07ED7388255B50B6007ABA53 /* CChessRank.swift in Sources */,
 				07DA9B81254C578A00D51B66 /* ViewController.swift in Sources */,
+				07ED7385255B5016007ABA53 /* CChessGame.swift in Sources */,
 				07DA9B92254C57D500D51B66 /* BoardView.swift in Sources */,
 				07DA9B7D254C578A00D51B66 /* AppDelegate.swift in Sources */,
+				07ED7381255B4F86007ABA53 /* CChessPlayer.swift in Sources */,
 				07DA9B7F254C578A00D51B66 /* SceneDelegate.swift in Sources */,
+				07ED737D255B4F71007ABA53 /* CChessPiece.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
