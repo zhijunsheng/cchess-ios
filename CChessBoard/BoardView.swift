@@ -17,8 +17,15 @@ class BoardView: UIView {
     let frameMargin: CGFloat = 12
     
     var shadowPiecesBox: Set<CChessPiece> = []
+    var keyImageNameValueImage: Dictionary<String, UIImage> = [:]
 
     override func draw(_ rect: CGRect) {
+        if keyImageNameValueImage.isEmpty {
+            for piece in shadowPiecesBox {
+                keyImageNameValueImage[piece.imageName] = UIImage(named: piece.imageName)
+            }
+        }
+        
         originX = (bounds.width - CGFloat(cols - 1) * cellSide) / 2
         originY = (bounds.height - CGFloat(rows - 1) * cellSide) / 2
         
@@ -35,7 +42,7 @@ class BoardView: UIView {
     }
     
     func drawPieceAt(col: Int, row: Int, imageName: String) {
-        let pieceImage = UIImage(named: imageName)
+        let pieceImage = keyImageNameValueImage[imageName]
         pieceImage?.draw(in: CGRect(x: originX + CGFloat(col) * cellSide - cellSide/2, y: originY + CGFloat(rows - 1 - row) * cellSide - cellSide/2, width: cellSide, height: cellSide))
     }
     
