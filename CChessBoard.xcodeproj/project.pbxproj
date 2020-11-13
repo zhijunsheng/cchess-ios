@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07641384255F37D400D97B1B /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07641383255F37D400D97B1B /* DictionaryTests.swift */; };
 		07DA9B7D254C578A00D51B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA9B7C254C578A00D51B66 /* AppDelegate.swift */; };
 		07DA9B7F254C578A00D51B66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA9B7E254C578A00D51B66 /* SceneDelegate.swift */; };
 		07DA9B81254C578A00D51B66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DA9B80254C578A00D51B66 /* ViewController.swift */; };
@@ -20,7 +21,20 @@
 		07ED7388255B50B6007ABA53 /* CChessRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ED7387255B50B6007ABA53 /* CChessRank.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0764137A255F378A00D97B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DA9B71254C578A00D51B66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07DA9B78254C578A00D51B66;
+			remoteInfo = CChessBoard;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		07641375255F378A00D97B1B /* CChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07641379255F378A00D97B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07641383255F37D400D97B1B /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		07DA9B79254C578A00D51B66 /* CChessBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CChessBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DA9B7C254C578A00D51B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DA9B7E254C578A00D51B66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07641372255F378A00D97B1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07DA9B76254C578A00D51B66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07641376255F378A00D97B1B /* CChessTests */ = {
+			isa = PBXGroup;
+			children = (
+				07641379255F378A00D97B1B /* Info.plist */,
+				07641383255F37D400D97B1B /* DictionaryTests.swift */,
+			);
+			path = CChessTests;
+			sourceTree = "<group>";
+		};
 		07DA9B70254C578A00D51B66 = {
 			isa = PBXGroup;
 			children = (
 				07DA9B7B254C578A00D51B66 /* CChessBoard */,
+				07641376255F378A00D97B1B /* CChessTests */,
 				07DA9B7A254C578A00D51B66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				07DA9B79254C578A00D51B66 /* CChessBoard.app */,
+				07641375255F378A00D97B1B /* CChessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +117,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		07641374255F378A00D97B1B /* CChessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0764137E255F378A00D97B1B /* Build configuration list for PBXNativeTarget "CChessTests" */;
+			buildPhases = (
+				07641371255F378A00D97B1B /* Sources */,
+				07641372255F378A00D97B1B /* Frameworks */,
+				07641373255F378A00D97B1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0764137B255F378A00D97B1B /* PBXTargetDependency */,
+			);
+			name = CChessTests;
+			productName = CChessTests;
+			productReference = 07641375255F378A00D97B1B /* CChessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		07DA9B78254C578A00D51B66 /* CChessBoard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07DA9B8D254C578F00D51B66 /* Build configuration list for PBXNativeTarget "CChessBoard" */;
@@ -108,9 +158,14 @@
 		07DA9B71254C578A00D51B66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					07641374255F378A00D97B1B = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+						TestTargetID = 07DA9B78254C578A00D51B66;
+					};
 					07DA9B78254C578A00D51B66 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -130,11 +185,19 @@
 			projectRoot = "";
 			targets = (
 				07DA9B78254C578A00D51B66 /* CChessBoard */,
+				07641374255F378A00D97B1B /* CChessTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07641373255F378A00D97B1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07DA9B77254C578A00D51B66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +211,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07641371255F378A00D97B1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07641384255F37D400D97B1B /* DictionaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07DA9B75254C578A00D51B66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +235,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0764137B255F378A00D97B1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07DA9B78254C578A00D51B66 /* CChessBoard */;
+			targetProxy = 0764137A255F378A00D97B1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		07DA9B82254C578A00D51B66 /* Main.storyboard */ = {
@@ -185,6 +264,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0764137C255F378A00D97B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8B74FCZCC;
+				INFOPLIST_FILE = CChessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.CChessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CChessBoard.app/CChessBoard";
+			};
+			name = Debug;
+		};
+		0764137D255F378A00D97B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8B74FCZCC;
+				INFOPLIST_FILE = CChessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.CChessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CChessBoard.app/CChessBoard";
+			};
+			name = Release;
+		};
 		07DA9B8B254C578F00D51B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,6 +466,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0764137E255F378A00D97B1B /* Build configuration list for PBXNativeTarget "CChessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0764137C255F378A00D97B1B /* Debug */,
+				0764137D255F378A00D97B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07DA9B74254C578A00D51B66 /* Build configuration list for PBXProject "CChessBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
